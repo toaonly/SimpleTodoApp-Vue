@@ -1,0 +1,15 @@
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+html {
+  font-size: 20px;
+  font-family: 'NanumSquare', sans-serif !important;
+}
+
+$selectors: ( html, body, h1, h2, h3, h4, h5, h6, p );
+
+@each $selector in $selectors {
+  #{$selector} {
+    margin: 0;
+    padding: 0;
+  }
+}
